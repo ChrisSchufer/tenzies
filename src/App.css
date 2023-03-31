@@ -1,0 +1,79 @@
+.App {
+  height: 100%;
+  padding: 3rem 2rem;
+  font-family: "Varela Round", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(236, 236, 236);
+  border-radius: 5px;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 4rem;
+  text-align: center;
+  color: rgb(53, 38, 63);
+}
+
+.content {
+  margin: 1rem 3rem 3rem 3rem;
+  font-size: 1.9rem;
+  color: rgb(161, 31, 165);
+}
+
+.die-container {
+  padding: 1rem;
+  background-color: rgb(161, 31, 165);
+  border-radius: 5px;
+  max-height: fit-content;
+  max-width: 600px;
+  display: grid;
+  grid-template: repeat(4, 1fr) / repeat(5, 1fr);
+  place-items: center;
+  gap: 1rem;
+}
+
+.die {
+  height: 65px;
+  width: 65px;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.die-value {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.btn {
+  font-family: inherit;
+  grid-column: 1/6;
+  grid-row: 3/4;
+  width: 60%;
+  padding: 1rem;
+  font-weight: bold;
+  font-size: 1.5rem;
+  letter-spacing: 0.3rem;
+  color: white;
+  border: none;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  background: rgb(53, 38, 63);
+  transition: all 100ms ease-in;
+}
+
+.btn:hover {
+  letter-spacing: 0.4rem;
+}
+
+.btn:active {
+  -webkit-box-shadow: inset 0px 0px 5px #c1c1c1;
+  -moz-box-shadow: inset 0px 0px 5px #c1c1c1;
+  box-shadow: inset 0px 0px 5px #c1c1c1;
+  outline: none;
+}
